@@ -64,7 +64,7 @@
     "homepage": "https://github.com/dataroadinc/dr-ts-setup-auth#readme",
     "dependencies": {
         "@commander-js/extra-typings": "14.0.0",
-        "@google-cloud/iam-credentials": "4.0.1",
+        "@google-cloud/iam-credentials": "5.1.0",
         "@google-cloud/iap": "^4.0.1",
         "@google-cloud/org-policy": "^4.0.1",
         "@google-cloud/resource-manager": "^6.0.1",
