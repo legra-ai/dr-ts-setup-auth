@@ -83,7 +83,7 @@
     "devDependencies": {
         "@commitlint/cli": "^19.8.1",
         "@commitlint/config-conventional": "^19.8.1",
-        "@dataroadinc/versioning": "0.0.6",
+        "@dataroadinc/versioning": "0.0.7",
         "@eslint/eslintrc": "^3.3.1",
         "@eslint/js": "^9.23.0",
         "@types/node": "^24.0.13",
@@ -95,11 +95,11 @@
         "eslint-plugin-import": "^2.31.0",
         "globals": "^16.0.0",
         "husky": "^9.1.7",
-        "markdownlint-cli": "^0.45.0",
+        "markdownlint-cli": "^0.50.0",
         "prettier": "^3.6.2",
         "ts-node": "^10.9.2",
         "tsc-alias": "^1.8.16",
-        "tsx": "4.19.3",
+        "tsx": "4.23.15",
         "typescript": "^5.8.3",
         "vitest": "^3.2.4"
     },
