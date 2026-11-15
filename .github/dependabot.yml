@@ -23,8 +23,14 @@ updates:
       commit-message:
           prefix: ci(deps)
       groups:
+          shared-actions:
+              applies-to: version-updates
+              patterns:
+                  - "legra-ai/github-actions*"
           compatible:
               applies-to: version-updates
+              exclude-patterns:
+                  - "legra-ai/github-actions*"
               update-types:
                   - minor
                   - patch
