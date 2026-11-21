@@ -78,7 +78,7 @@
         "google-auth-library": "^10.1.0",
         "google-gax": "^5.0.1",
         "googleapis": "154.0.0",
-        "vercel": "44.5.3"
+        "vercel": "65.12.1"
     },
     "devDependencies": {
         "@commitlint/cli": "^19.8.1",
