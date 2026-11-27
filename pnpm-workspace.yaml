@@ -5,3 +5,7 @@ overrides:
     # google-gax pins google-auth-library exactly; let it share the project's
     # copy so GoogleAuth instances are type-compatible across clients.
     google-gax>google-auth-library: ^10.9.1
+ignoredOptionalDependencies:
+    # vercel's JS fallback for exotic platforms. pnpm skips it on Linux and
+    # macOS, and with it the rollup native bindings that vitest also needs.
+    - "@vercel/cli-support"
