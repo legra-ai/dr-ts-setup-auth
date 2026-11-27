@@ -50,9 +50,9 @@ export class GcpGlobalIamManager extends BaseGcpIamManager {
       await this.organizationsClient.searchOrganizations({})
       grantedPermissions.add(GLOBAL_PERMISSIONS.LIST_ORGANIZATIONS)
     } catch (error) {
-      if (
-        !(error instanceof Error && error.message.includes("permission denied"))
-      ) {
+      if (!(
+        error instanceof Error && error.message.includes("permission denied")
+      )) {
         console.error(
           "Unexpected error testing LIST_ORGANIZATIONS permission:",
           error

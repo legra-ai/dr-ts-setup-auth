@@ -1,3 +1,7 @@
 onlyBuiltDependencies:
     - esbuild
     - unrs-resolver
+overrides:
+    # google-gax pins google-auth-library exactly; let it share the project's
+    # copy so GoogleAuth instances are type-compatible across clients.
+    google-gax>google-auth-library: ^10.9.1

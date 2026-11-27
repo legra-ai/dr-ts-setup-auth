@@ -313,9 +313,8 @@ export class GcpProjectOAuthSetup {
 
         // Automatically save to .env.local
         console.log("\nSaving OAuth credentials to .env.local...")
-        const { updateOrAddEnvVariable } = await import(
-          "../../../utils/env-handler.js"
-        )
+        const { updateOrAddEnvVariable } =
+          await import("../../../utils/env-handler.js")
         await updateOrAddEnvVariable("GCP_OAUTH_CLIENT_ID", clientId)
         await updateOrAddEnvVariable("GCP_OAUTH_CLIENT_SECRET", clientSecret)
         console.log("✅ OAuth credentials saved to .env.local")
