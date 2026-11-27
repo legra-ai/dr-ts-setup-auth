@@ -15,8 +15,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(commander@14.0.0)
       '@google-cloud/iam-credentials':
-        specifier: 4.0.1
-        version: 4.0.1
+        specifier: 5.1.0
+        version: 5.1.0
       '@google-cloud/iap':
         specifier: ^4.0.1
         version: 4.4.1
@@ -602,9 +602,9 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@google-cloud/iam-credentials@4.0.1':
-    resolution: {integrity: sha512-IBxyinsYOz3aIVciFRyeH2ZSFPz1g4wYiVXFG87CbapFNULMtZioq7v4gyT5DNkLvlwW/lGuqL4UqXx3RT9eWA==}
-    engines: {node: '>=18'}
+  '@google-cloud/iam-credentials@5.1.0':
+    resolution: {integrity: sha512-uvnL5qGkJNhdIJgFe13j4yBq/egT6Gbj/X/3KWg55BBA+3hjBuIhonQ0G7rP3aCU1UPi1ISJPpwlt3u8utATnQ==}
+    engines: {node: '>=22'}
 
   '@google-cloud/iap@4.4.1':
     resolution: {integrity: sha512-FJnXkX1u4AQ326EuX8hPtReZILfMSFHzfrEW1ji/jM+q+gfvz1REmZsd5sCKMec458w0avPjtnnF6bxCDj0Kug==}
@@ -4123,9 +4123,9 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@google-cloud/iam-credentials@4.0.1':
+  '@google-cloud/iam-credentials@5.1.0':
     dependencies:
-      google-gax: 5.0.8
+      google-gax: 6.17.0
     transitivePeerDependencies:
       - supports-color
 
