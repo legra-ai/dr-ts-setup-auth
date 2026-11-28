@@ -52,6 +52,9 @@ jobs:
         needs: test
         runs-on: ubuntu-latest
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        permissions:
+            contents: read
+            id-token: write
         steps:
             - uses: actions/checkout@v7
               with:
@@ -62,7 +65,12 @@ jobs:
               uses: actions/setup-node@v7
               with:
                   node-version: "22.x"
-                  registry-url: "https://registry.npmjs.org"
+
+            - name: Install npm with OIDC trusted publishing support
+              run: npm install -g npm@11.19.1
+
+            - name: Verify npm version
+              run: npm --version
 
             - name: Install pnpm
               run: corepack enable && corepack prepare pnpm@10.10.0 --activate
@@ -84,8 +92,6 @@ jobs:
 
             - name: Publish to NPM
               run: npm publish --access public
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
             - name: Restore .gitignore
               run: echo "CHANGELOG.md" >> .gitignore
